@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <form class="form"  action="/submit" method="POST"> 
+       <div class="inputfield">
+          <label>Full Name</label>
+          <input type="text" class="input" id="fullName" name="fullName" required><br><br>
+       </div>  
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="email" class="input" id="email" name="email" required><br><br>
+       </div>  
+        <div class="inputfield">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select id="gender" name="gender" required>
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+       </div> 
+        <div class="inputfield">
+          <label>Branch</label>
+          <input type="text" class="input" id="branch"  name="branch" required><br><br>
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input" id="phone" name="phone" required pattern="[0-9]{10}" title="Phone number must be 10 digits"><br><br>
+       </div> 
+      <div class="inputfield">
+        <input type="submit" value="Register" class="btn">
+      </div>
+    </form>
+</div>	
+	
+<script src="script.js"></script>
+</body>
+</html>
